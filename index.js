@@ -26,3 +26,36 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
+
+
+
+//checkout page
+const decrease = document.getElementById("decrease");
+const increase = document.getElementById("increase");
+const quantityNumber = document.getElementById("quantityNumber");
+const cartTotal = document.getElementById("cartTotal");
+
+let number = parseInt(quantityNumber.innerText); 
+const pricePerItem = 20.00; 
+
+// Decrease quantity and update total
+decrease.addEventListener('click', () => {
+    if (number > 1) { 
+        number--;
+        quantityNumber.innerText = number;
+        updateTotal();
+    }
+});
+
+// Increase quantity and update total
+increase.addEventListener('click', () => {
+    number++;
+    quantityNumber.innerText = number;
+    updateTotal();
+});
+
+// Function to update the total price
+function updateTotal() {
+    const total = (pricePerItem * number).toFixed(2);
+    cartTotal.innerText = total;
+}
