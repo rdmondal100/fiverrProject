@@ -3,9 +3,7 @@
     padding: 0;
     font-family: 'Arial', serif;
 }
-body{
-    overflow-x: hidden;
-}
+
 
 /*background*/
 .header {
@@ -15,6 +13,7 @@ body{
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow-x: hidden;
 }
 
 /*navigation bar*/
