@@ -1,12 +1,10 @@
-
-
 /* header  */
 
 .nav-links ul li a {
-  color:  black;
+  color: black;
 }
 
-.hamburger{
+.hamburger {
   color: black;
 }
 
@@ -18,17 +16,18 @@
   color: black;
 }
 
-.product-details  {
+.product-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 2rem;
 }
+
 .product-details h1 {
   color: #007BFF;
   font-size: 2.5rem;
   margin-bottom: 20px;
-  
+
 }
 
 .product-info {
@@ -54,7 +53,8 @@
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
-.price{
+
+.price {
   color: #007BFF;
 }
 
@@ -78,46 +78,51 @@ button:hover {
 @media(max-width: 1080px) {
 
 
-  .product-section{
+  .product-section {
     padding: 2rem 1rem;
   }
+
   .product-details h1 {
     font-size: 2rem;
-    
+
   }
-  .product-details .details p.desc{
+
+  .product-details .details p.desc {
     font-size: 1.1rem;
   }
-  .product-image {
-  }
+
+
   .product-details {
     text-align: left;
     gap: 1rem;
   }
+
   .product-info {
     gap: 2rem;
     padding: 2rem 1rem;
-}
+  }
 }
 
 
 @media (max-width: 768px) {
   .nav-links ul li a {
-    color:  white;
+    color: white;
   }
-  .hamburger.active{
+
+  .hamburger.active {
     color: white;
   }
 
   /* product  */
 
-  .product-info{
+  .product-info {
     flex-direction: column;
   }
 
   .product-image {
     width: 100%;
   }
+
   .product-details {
     width: 100%;
     padding: 1rem 4rem;

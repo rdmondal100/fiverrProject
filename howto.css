@@ -1,40 +1,40 @@
-
-
 /* header  */
 
 
 .nav-links ul li a {
-  color:  black;
+  color: black;
 }
 
-.hamburger{
+.hamburger {
   color: black;
 }
 
 /* how to  */
-.how-to-section h1{
-font-size: 2.5rem ;
-text-align: center;
-color: #007BFF;
-margin-bottom: 5rem;
-margin-top: 1rem;
+.how-to-section h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #007BFF;
+  margin-bottom: 5rem;
+  margin-top: 1rem;
 }
 
 .instruction-placeholder .step {
- padding: 2rem 3rem;
+  padding: 2rem 3rem;
 }
-.instruction-placeholder .step h2{
-font-size: 2rem ;
-text-align: start;
-margin: 10px 0px;
+
+.instruction-placeholder .step h2 {
+  font-size: 2rem;
+  text-align: start;
+  margin: 10px 0px;
 }
 
 
 @media (max-width: 768px) {
   .nav-links ul li a {
-    color:  white;
+    color: white;
   }
-  .hamburger.active{
+
+  .hamburger.active {
     color: white;
   }
 }

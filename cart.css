@@ -1,115 +1,120 @@
-
-
 /* header  */
 
 .nav-links ul li a {
-  color:  black;
+  color: black;
 }
 
-.hamburger{
+.hamburger {
   color: black;
 }
 
 
 
-.cart-items{
+.cart-items {
   display: flex;
   justify-content: space-around;
   padding: 0 2rem;
 
 }
-.cart-items img{
+
+.cart-items img {
   border-radius: 10px;
 }
-.shopping-title{
+
+.shopping-title {
   font-size: 3rem;
-  padding: 2rem ;
+  padding: 2rem;
   margin-bottom: 3rem;
   color: #007BFF;
 }
 
-.product-title{
+.product-title {
   font-size: 1.8rem;
 }
 
-.details{
+.details {
   display: flex;
   flex-direction: column;
   gap: 5rem;
 }
 
-.details .product{
+.details .product {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.cart-summary{
+.cart-summary {
   display: flex;
   gap: 3rem;
   align-items: end;
 }
 
-.cart-summary button{
+.cart-summary button {
   cursor: pointer;
   padding: 1rem;
   font-size: 1rem;
 }
 
-.quantity{
+.quantity {
   background-color: rgb(174, 173, 173);
   width: 130px;
-  height: 40px; 
+  height: 40px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: .34rem ;
+  padding: .34rem;
 
 }
-.quantity .dec{
+
+.quantity .dec {
   font-size: 2.5rem;
   cursor: pointer;
 }
-.quantity .inc{
+
+.quantity .inc {
   font-size: 2rem;
   cursor: pointer;
 }
-.quantity .num{
+
+.quantity .num {
   font-size: 1.5rem;
 }
 
-.calculate{
+.calculate {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
 
 
-.cart-section{
+.cart-section {
   margin-bottom: 5rem;
 }
 
-.shipping-free{
-color: #0757ad;
+.shipping-free {
+  color: #0757ad;
 }
 
 /* shipping address  */
 
-form .form-group{
+form .form-group {
   display: flex;
   flex-direction: column;
   width: 45%;
 }
 
-form .form-group input , textarea{
+form .form-group input,
+textarea {
   border: none;
   background-color: #007bff3b;
   padding: 1rem 2rem;
   border-radius: 22px;
-  
-  
+
+
 }
-form select{
+
+form select {
   width: 12rem;
   height: 2.8rem;
   border-radius: 22px;
@@ -118,21 +123,25 @@ form select{
   padding: 6px 16px
 }
 
-form label{
+form label {
   margin-bottom: .3rem;
   margin-left: .1rem;
   font-weight: 500;
 }
-form input:focus, textarea:focus, select:focus{
+
+form input:focus,
+textarea:focus,
+select:focus {
   outline: none;
 }
 
-.shipping-address{
+.shipping-address {
   margin-bottom: 3rem;
   padding: 1rem 2rem;
 }
-.shipping-address form{
-  display:  flex;
+
+.shipping-address form {
+  display: flex;
   flex-wrap: wrap;
   width: 100%;
   gap: 1rem;
@@ -144,23 +153,26 @@ form input:focus, textarea:focus, select:focus{
 
 
 @media (max-width: 1080px) {
-  
-  .cart-items{
+
+  .cart-items {
     display: flex;
     flex-direction: column;
   }
 
-  .cart-items img{
+  .cart-items img {
     width: 70%;
     margin-bottom: 2rem;
   }
-  .details{
+
+  .details {
     gap: 3rem;
   }
-  .price{
+
+  .price {
     margin-top: 5px;
   }
-  .shopping-title{
+
+  .shopping-title {
     font-size: 2.2rem;
   }
 
@@ -170,20 +182,21 @@ form input:focus, textarea:focus, select:focus{
 
 @media (max-width: 768px) {
   .nav-links ul li a {
-    color:  white;
-  }
-  .hamburger.active{
     color: white;
   }
 
-  .cart-summary{
+  .hamburger.active {
+    color: white;
+  }
+
+  .cart-summary {
     flex-direction: column;
     align-items: start;
     gap: 1rem;
   }
 
 
-  form .form-group{
+  form .form-group {
     display: flex;
     flex-direction: column;
     width: 100%;
