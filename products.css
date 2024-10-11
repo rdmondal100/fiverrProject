@@ -1,7 +1,9 @@
 
 
 /* header  */
-
+.header{
+  overflow-x: hidden;
+}
 .nav-links ul li a {
   color:  black;
 }
