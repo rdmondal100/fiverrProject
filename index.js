@@ -15,21 +15,33 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // To handle the current active menue 
 document.addEventListener("DOMContentLoaded", function () {
-  const currentPage = window.location.pathname.split("/").pop();
-  console.log(currentPage)
+  let currentPage = window.location.pathname.split("/").pop();
+  
+  // If the current page is root '/', treat it as 'index.html'
+  if (currentPage === "") {
+    currentPage = "index.html";
+  }
+
   const navLinks = document.querySelectorAll(".nav-links ul li a");
-  console.log(navLinks)
 
   navLinks.forEach(link => {
-      if (link.getAttribute("href") === currentPage) {
-          link.classList.add("active");
-      }
+    const linkHref = link.getAttribute("href");
+
+    if (linkHref === currentPage) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
   });
 });
 
 
 
+
 //checkout page
+document.addEventListener("DOMContentLoaded", function () {
+  if( window.location.pathname.split("/").pop()==="cart.html"){
+
 const decrease = document.getElementById("decrease");
 const increase = document.getElementById("increase");
 const quantityNumber = document.getElementById("quantityNumber");
@@ -59,3 +71,8 @@ function updateTotal() {
     const total = (pricePerItem * number).toFixed(2);
     cartTotal.innerText = total;
 }
+
+}
+
+
+})
