@@ -28,6 +28,37 @@ nav {
     display: none;
 }
 
+/* handle active menus  */
+
+.nav-links ul li a.active::after  {
+    content: '';
+    width: 100%;
+    height: 2.5px;
+    background: #0097B2;
+    display: block;
+    margin: auto;
+}
+
+.nav-links ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #0097B2;
+    display: block;
+    margin: auto;
+    transition: width 0.5s;
+}
+
+/* Hover state */
+.nav-links ul li a:hover::after {
+    width: 100%;
+}
+
+/* Active state without transition */
+.nav-links ul li a.active::after {
+    width: 100%;
+    transition: none;
+}
 
 
 .nav-links {
@@ -50,21 +81,7 @@ nav {
     font-size: 1.4rem;
 }
 
-/*Navigation bar underline*/
-.nav-links ul li::after {
-    content: '';
-    width: 0%;
-    height: 2px;
-    background: #0097B2;
-    display: block;
-    margin: auto;
-    transition: 0.5s;
-}
 
-.nav-links ul li:hover::after {
-    width: 100%;
-
-}
 
 /*text box position and colour*/
 .text-box {
@@ -255,11 +272,13 @@ footer {
     color: white;
     text-decoration: none;
     border-radius: 5px;
+    border: 2px transparent;
 }
 
 .btn:hover {
     background-color: #0056b3; /* Darker shade for hover effect */
 }
+
 
 
 
